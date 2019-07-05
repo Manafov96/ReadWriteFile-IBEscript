@@ -1,6 +1,6 @@
 execute ibeblock
 (
-  fn varchar(100) comment 'FileName (write)',
+  fn varchar(100) comment 'File Name (write)',
   fn1 varchar(100) comment 'File Name (read)'
 )
 as
