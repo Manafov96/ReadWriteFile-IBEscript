@@ -7,7 +7,6 @@ as
 begin
   --fn = 'D:\FileReadWrite\WriteFile.txt'; -- This is the file path we are recording
   --fn1 = 'D:\FileReadWrite\ReadFile.txt'; -- This is the file path we read from
-  dn = ibec_ExtractFileDir(fn);
   FL_EXEC = 0;
   LAST_ERROR = '';
   MY_TEXT = '';
@@ -18,6 +17,7 @@ begin
     ibec_MessageDlg('Invalid file name!!', __mtWarning, __mbOk);
     exit;
   end
+  dn = ibec_ExtractFileDir(fn);
   if (dn is null or (dn = ''))then
   begin
     ibec_MessageDlg('Invalid directory!!!', __mtWarning, __mbOk);
