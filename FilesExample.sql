@@ -44,7 +44,7 @@ begin
         else
           ibec_ForceDirectories(:dn);
           if (ibec_DirectoryExists(:dn)) then
-            ibec_MessageDlg('I created Directory!, __mtInformation, __mbOk);
+            ibec_MessageDlg('I created Directory!', __mtInformation, __mbOk);
           else
             ibec_MessageDlg('I could not create the directory, the path is inaccessible!', __mtError, __mbOk);
       end
